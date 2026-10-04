@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf7ff;
+    color: #333;
+}
+
+header {
+    background-color: #65c7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #2196d2;
+}
+
+
+/* HOME */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #d9f3ff;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: #1683bd;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background-color: #ffb84d;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #ff9f1c;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.emoji {
+    font-size: 55px;
+}
+
+
+/* GENERAL PAGE */
+
+.page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.page h2 {
+    color: #1683bd;
+    font-size: 32px;
+}
+
+.about-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    line-height: 1.7;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* ANIMALS */
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.animal-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.animal-emoji {
+    font-size: 70px;
+}
+
+.animal-card h3 {
+    color: #1683bd;
+}
+
+
+/* FACTS */
+
+.fact-box {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.fact-box h3 {
+    color: #1683bd;
+}
+
+.lesson-complete {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fff4cf;
+    border-radius: 20px;
+}
+
+
+/* QUIZ */
+
+.quiz-container {
+    max-width: 850px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.quiz-container h2 {
+    text-align: center;
+    color: #1683bd;
+    font-size: 35px;
+}
+
+.quiz-container > p {
+    text-align: center;
+}
+
+.question {
+    background-color: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.question h3 {
+    color: #1683bd;
+}
+
+.question label {
+    display: block;
+    background-color: #f0f9ff;
+    margin: 10px 0;
+    padding: 13px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.question label:hover {
+    background-color: #d8f1ff;
+}
+
+.question input {
+    margin-right: 10px;
+}
+
+button {
+    border: none;
+    padding: 14px 25px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #65c7f7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1683bd;
+}
+
+
+/* RESULT */
+
+#result {
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #65c7f7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .animal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
