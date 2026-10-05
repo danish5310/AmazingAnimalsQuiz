@@ -156,16 +156,34 @@ nav a:hover {
 /* FACTS */
 
 .fact-box {
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px;
+    background-color: #65c7f7;
+    margin: 25px auto;
+    padding: 25px;
     border-radius: 20px;
     max-width: 700px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.fact-box img {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 15px;
 }
 
 .fact-box h3 {
-    color: #1683bd;
+    color: rgb(237, 240, 242);
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.fact-box p {
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 .lesson-complete {
